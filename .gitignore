@@ -34,11 +34,7 @@ captures/
 
 # Intellij
 *.iml
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/gradle.xml
-.idea/dictionaries
-.idea/libraries
+.idea/
 
 # Keystore files
 *.jks
@@ -55,4 +51,4 @@ freeline/
 freeline_project_description.json
 
 # Ignore Symmetric .jar files
-app/libs/*
+app/libs/*.jar
