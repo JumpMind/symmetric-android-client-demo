@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.jumpmind.symmetric.symmetricandroidclientdemo.MainActivity">
+
+    <EditText
+        android:id="@+id/sqlTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="monospace"
+        android:hint="SQL Command"
+        android:text="select * from ITEM"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/runButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sqlTextField"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Run" />
+
+    <Button
+        android:id="@+id/selectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/runButton"
+        android:layout_alignBottom="@+id/runButton"
+        android:layout_toEndOf="@+id/runButton"
+        android:layout_toRightOf="@+id/runButton"
+        android:text="Select" />
+
+    <Button
+        android:id="@+id/insertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/selectButton"
+        android:layout_alignBottom="@+id/selectButton"
+        android:layout_toEndOf="@+id/selectButton"
+        android:layout_toRightOf="@+id/selectButton"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/insertButton"
+        android:layout_alignBottom="@+id/insertButton"
+        android:layout_toEndOf="@+id/insertButton"
+        android:layout_toRightOf="@+id/insertButton"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/outputTextView"
+        android:layout_width="match_parent"
+        android:layout_height="361dp"
+        android:layout_above="@+id/newFileButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/runButton"
+        android:fontFamily="monospace"
+        android:hint="SQL Output"
+        android:scrollbars="vertical"
+        android:text=""
+        android:textSize="11dp"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/newFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="New File" />
+
+</RelativeLayout>
