@@ -13,9 +13,9 @@ To compile, the SymmetricDS .jar files must be built from the SymmetricDS source
 To generate the libs directory, clone the symmetric-ds GitHub repository and run the following command in the symmetric-assemble directory: 
 ./gradlew androidDistZip
 
-The libs directory will be outputted in a .zip archive to the symmetric-android/build/distributions/
+The libs directory will be outputted in a .zip archive to the symmetric-android/build/distributions/ directory
 
-Copy the generated libs directory into the app/ directory of the android project and build the android project
+Copy the entire generated libs directory into the app directory of the android project and build the android project
 
 # Please Note
 
