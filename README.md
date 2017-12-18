@@ -13,7 +13,7 @@ To compile, the SymmetricDS .jar files must be built from the SymmetricDS source
 To generate the libs directory, clone the symmetric-ds GitHub repository and run the following command in the symmetric-assemble directory: 
 ./gradlew androidDistZip
 
-The libs directory will be outputted in a .zip to the symmetric-android/build/distributions/
+The libs directory will be outputted in a .zip archive to the symmetric-android/build/distributions/
 
 Copy the generated libs directory into the app/ directory of the android project and build the android project
 
@@ -21,6 +21,6 @@ Copy the generated libs directory into the app/ directory of the android project
 
 In order to sync properly, the Sync URL of the corp-000 node must be updated to use the IP address of host rather than localhost.  
 
-Then, update the String REGISTRATION_URL in the DbProvider to the new Sync URL of the corp-000 node. 
+Then, update the String REGISTRATION_URL in the DbProvider class of the android project to the new Sync URL of the corp-000 node. 
 
 
