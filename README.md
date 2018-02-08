@@ -25,10 +25,4 @@ The libs directory will be outputted in a .zip archive to the symmetric-android/
 
 Extract the libs directory and copy the entire directory to the app/libs directory in the Android project.
 
-# Please Note
-
-In order to sync properly, the Sync URL of the corp-000 node must be updated to use the IP address of host rather than localhost.  
-
-Then, update the String REGISTRATION_URL in the DbProvider class of the Android project to the new Sync URL of the corp-000 node. 
-
 
