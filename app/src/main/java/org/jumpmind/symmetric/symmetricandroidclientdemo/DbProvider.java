@@ -23,7 +23,7 @@ import java.util.Properties;
 public class DbProvider extends ContentProvider {
 
     //TODO: Update REGISTRATION_URL with Sync URL of corp-000
-    private final String REGISTRATION_URL = "http://192.168.42.105:31415/sync/corp-000";
+    private final String REGISTRATION_URL = "http://YOUR_CORP_IP_ADDRESS:31415/sync/corp-000";
     private final String NODE_ID = "android-003";
     private final String NODE_GROUP = "store";
 
@@ -114,6 +114,11 @@ public class DbProvider extends ContentProvider {
 
         // TODO: Update properties with the desired Symmetric parameters (e.g. File Sync parameters)
         Properties properties = new Properties();
+
+        // Workaround for SymmetricDS 3.9 versions with incompatible parameter defaults
+        properties.put(ParameterConstants.STREAM_TO_FILE_ENABLED, "false");
+        properties.put(ParameterConstants.INITIAL_LOAD_USE_EXTRACT_JOB, "false");
+
         //properties.put(ParameterConstants.FILE_SYNC_ENABLE, "true");
         //properties.put("start.file.sync.tracker.job", "true");
         //properties.put("start.file.sync.push.job", "true");
